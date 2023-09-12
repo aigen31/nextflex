@@ -1,0 +1,131 @@
+@import config;
+
+// STYLES OF COLUMN LAYOUT START
+.row
+	display: flex
+	margin: 0 calc($padding-x * -1) calc($colmargin * -1)
+	&.--wrap
+		flex-wrap: wrap
+	&.--b-gap-0
+		.col
+			margin-bottom: 0
+
+.col
+	padding: $colpadding
+	margin-bottom: $colmargin
+
+@mixin c-padding()
+	padding: $c-padding-y $c-padding-x
+
+@mixin c-nopadding()
+	margin: calc($c-padding-y * -1) calc($c-padding-x * -1)
+
+@mixin container($width)
+	.container
+		max-width: $width
+		width: 100%
+		margin: auto
+		@include c-padding
+		&.-fluid
+			max-width: 100%
+		&.--l-offs
+			margin: 0
+			width: auto
+			max-width: none !important
+			margin-left: calc(100% / 2 - ($width / 2))
+			padding-right: 0
+
+@mixin res-container($width)
+	.container
+		max-width: $width
+		&.--l-offs
+			margin-left: calc(100% / 2 - ($width / 2))
+
+@mixin colgap()
+	margin-bottom: $colmargin
+	padding: $colpadding
+
+@mixin col-auto($width)
+	flex: 0 1 $width
+
+@mixin col-1()
+	flex: 0 1 8.3%
+
+@mixin col-2()
+	flex: 0 1 16.6%
+
+@mixin col-3()
+	flex: 0 1 25%
+
+@mixin col-4()
+	flex: 0 1 33.3%
+
+@mixin col-5()
+	flex: 0 1 41.6%
+
+@mixin col-6()
+	flex: 0 1 50%
+
+@mixin col-7()
+	flex: 0 1 58.3%
+
+@mixin col-8()
+	flex: 0 1 66.6%
+
+@mixin col-9()
+	flex: 0 1 83.3%
+
+@mixin col-10()
+	flex: 0 1 75%
+
+@mixin col-11()
+	flex: 0 1 91%
+
+@mixin col12()
+	flex: 0 1 100%
+// STYLES OF COLUMN LAYOUT START
+
+
+// FAST SNIPPETS START
+// normalize styles
+@mixin nz-list()
+	list-style-type: none
+	margin: 0
+	padding: 0
+@mixin nz-all()
+	*
+		margin: 0
+		padding: 0
+		box-sizing: border-box
+
+// other styles
+@mixin textgradient($gradient)
+	background: $gradient
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+		font-display: swap
+// FAST SNIPPETS END
+
+// CONVERT FIXED UNITES IN RELATIVE UNIT START
+// from PX to VW
+@function pxvw($px)
+	@return calc($px / 1920 * 100vw)
+
+// from PX to VH
+@function pxvh($px)
+	@return calc($px / 1080 * 100vh)
+
+// from PX to EM
+@function pxem($px)
+	@return calc($px / $rem * 1em)
+
+// from PX to REM
+@function pxrem($px)
+	@return calc($px / $rem * 1rem)
+// CONVERT FIXED UNITES IN RELATIVE UNIT END
