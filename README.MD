@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="nextflex.png" width="150" alt="NextFlex Logo">
+	<img src="nextflex.png" width="250" alt="NextFlex Logo">
 </p>
 
 <h1>NEXTFLEX 🌆</h1>
