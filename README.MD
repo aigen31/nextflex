@@ -1,5 +1,5 @@
 <p align="center">
-	![NEXTFLEX](nextflex.png)
+	<img src="nextflex.png" alt="NextFlex Logo">
 </p>
 
 <h1>NEXTFLEX 🌆</h1>
