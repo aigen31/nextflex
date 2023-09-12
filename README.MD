@@ -1,4 +1,4 @@
-<p align="center" style="float: right;">
+<p align="center">
 	<img src="nextflex.png" width="250" alt="NextFlex Logo">
 </p>
 
