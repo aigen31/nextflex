@@ -8,7 +8,7 @@
 <h2>HOW TO USE IT?</h2>
 <p>You must to know, what is Sass predprocessor and able use it - <a href="https://sass-lang.com/documentation/">see documentation</a></p>
 
-<p>NextFlex maked at placement mixins, so we will be include code in our Sass file:</p>
+<p>NextFlex based on mixins, so we will be include code in our Sass file:</p>
 
 <pre>
 @import path/to/nextflex
