@@ -1,4 +1,6 @@
-![NEXTFLEX](nextflex.png)
+<div style="text-align: center">
+	![NEXTFLEX](nextflex.png)
+</div>
 
 <h1>NEXTFLEX 🌆</h1>
 <p>It is Sass mixin kit and do your HTML/CSS layout most fasted, then bootstrap grid. NextFlex load only thoose styles, when you need.</p>
